@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman to int</title>
+</head>
+
+<body>
+    <h1>Roman to int</h1>
+
+    <script>
+        const romanToInt = (s) => {
+            let roman_list = ['I', 'V', 'X', 'L', 'C', 'D', 'M'];
+            let value_list = [1, 5, 10, 50, 100, 500, 1000];
+            let new_value=0;
+            for (let i = 0; i < s.length; i++) {
+                let provided_value=s[i];
+                roman_list.forEach((rl,index) => {
+                    // if(rl == provided_value){
+                    //     new_value +=value_list[index];
+                    // }
+
+                });
+            }
+            console.log(new_value);
+        }
+        romanToInt('MCMXCIV')
+    </script>
+</body>
+
+</html>
